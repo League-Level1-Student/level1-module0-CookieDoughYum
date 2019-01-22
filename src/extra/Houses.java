@@ -80,18 +80,14 @@ public class Houses {
 		house.setSpeed(50);
 		house.penDown();
 		house.move(n);
+		house.turn(45);
+		house.move(15);
 		house.turn(90);
-		for (int i = 0; i < 2; i++) {
-			house.move(15);
-			house.turn(270);
-			house.move(15);
-			house.turn(90);
-		}
-		house.turn(90);
+		house.move(15);
+		house.turn(45);
 		house.move(n);
-		house.turn(90);
-		house.turn(180);
-		house.move(50);
+		house.turn(270);
+		house.move(30);
 		house.turn(270);
 	}
 
