@@ -8,11 +8,14 @@ void setup(){
   size(600,600);  
   pictureOfRecord= loadImage("record.jpg");  
   pictureOfRecord.resize(400,400);
+  minim = new Minim(this);  
+  song = minim.loadFile("The Coconut Song.mp3", 512);//in the setup method
 }
 void draw(){
   rotateImage(pictureOfRecord, spin);
   if(mousePressed){
   image(pictureOfRecord, 100, 100); 
+song.play();
   }
   spin+=10;
 }
